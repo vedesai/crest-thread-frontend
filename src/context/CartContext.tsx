@@ -43,12 +43,14 @@ export function CartProvider({ children }: CartProviderProps) {
       let newItems: CartItem[];
 
       if (existingItemIndex >= 0) {
+        // Update existing item quantity
         newItems = prevCart.items.map((item, index) =>
           index === existingItemIndex
             ? { ...item, quantity: item.quantity + 1 }
             : item
         );
       } else {
+        // Add new item
         newItems = [
           ...prevCart.items,
           { productId: product.id, product, quantity: 1 },
