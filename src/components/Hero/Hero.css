@@ -58,6 +58,7 @@
   border-radius: var(--border-radius-md);
 }
 
+/* Responsive Styles */
 @media (max-width: 992px) {
   .hero-container {
     grid-template-columns: 1fr;

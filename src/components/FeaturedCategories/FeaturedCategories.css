@@ -69,6 +69,7 @@
   text-align: center;
 }
 
+/* Responsive Styles */
 @media (max-width: 1024px) {
   .categories-grid {
     grid-template-columns: repeat(3, 1fr);
