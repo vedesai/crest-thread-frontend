@@ -1,0 +1,98 @@
+/* AI Generated Code by Deloitte + Cursor (BEGIN) */
+
+.trust-section {
+  padding: var(--spacing-3xl) 0;
+  background-color: var(--color-background);
+}
+
+.trust-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-2xl);
+}
+
+.trust-badges {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+}
+
+.trust-title {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-primary);
+}
+
+.badges-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.badge-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-md);
+}
+
+.badge-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background-color: var(--color-background-light);
+  border-radius: var(--border-radius-md);
+  color: var(--color-text-primary);
+  flex-shrink: 0;
+}
+
+.badge-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.badge-title {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-primary);
+}
+
+.badge-description {
+  font-size: var(--font-size-base);
+  color: var(--color-text-secondary);
+  margin-bottom: 0;
+}
+
+@media (max-width: 992px) {
+  .trust-container {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-2xl);
+  }
+}
+
+@media (max-width: 768px) {
+  .trust-section {
+    padding: var(--spacing-2xl) 0;
+  }
+
+  .badges-list {
+    gap: var(--spacing-md);
+  }
+
+  .badge-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .badge-title {
+    font-size: var(--font-size-base);
+  }
+
+  .badge-description {
+    font-size: var(--font-size-sm);
+  }
+}
+
+/* AI Generated Code by Deloitte + Cursor (END) */
