@@ -2,20 +2,47 @@
 import { Shield, RefreshCw, Truck } from 'lucide-react';
 import './TrustSection.css';
 
-interface TrustBadgeData { id: string; icon: React.ReactNode; title: string; description: string; }
+interface TrustBadgeData {
+  id: string;
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+}
 
 const trustBadges: TrustBadgeData[] = [
-  { id: 'secure', icon: <Shield size={24} aria-hidden="true" />, title: 'Secure Shopping', description: 'SSL encrypted checkout' },
-  { id: 'returns', icon: <RefreshCw size={24} aria-hidden="true" />, title: 'Easy Returns', description: '60-day return policy' },
-  { id: 'delivery', icon: <Truck size={24} aria-hidden="true" />, title: 'Free Delivery', description: 'On orders over $75' },
+  {
+    id: 'secure',
+    icon: <Shield size={24} aria-hidden="true" />,
+    title: 'Secure Shopping',
+    description: 'SSL encrypted checkout',
+  },
+  {
+    id: 'returns',
+    icon: <RefreshCw size={24} aria-hidden="true" />,
+    title: 'Easy Returns',
+    description: '60-day return policy',
+  },
+  {
+    id: 'delivery',
+    icon: <Truck size={24} aria-hidden="true" />,
+    title: 'Free Delivery',
+    description: 'On orders over $75',
+  },
 ];
 
+/**
+ * Trust Section component
+ * Implements US-005: Trust Section (Why Shop With Us)
+ * Follows ADA Compliance Standards - semantic HTML, proper headings
+ */
 function TrustSection() {
   return (
     <section className="trust-section" aria-labelledby="trust-heading">
       <div className="trust-container container">
         <div className="trust-badges">
-          <h2 id="trust-heading" className="trust-title">Why Shop With Us</h2>
+          <h2 id="trust-heading" className="trust-title">
+            Why Shop With Us
+          </h2>
           <ul className="badges-list" role="list">
             {trustBadges.map((badge) => (
               <li key={badge.id} className="badge-item">
